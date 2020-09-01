@@ -1,3 +1,4 @@
+# Version will be bump
 name: Bump version
 on:
   push:
