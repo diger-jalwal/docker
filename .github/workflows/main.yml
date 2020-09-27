@@ -18,8 +18,11 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         WITH_V: true
 
-
+    
   generate:
+    runs-on: ubuntu-latest
+    container:
+      image: wyrihaximusnet/php:7.3-zts-alpine3.10-dev-root
     steps:
       - uses: actions/checkout@v1
       - name: 'Get Previous tag'
