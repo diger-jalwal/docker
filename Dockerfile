@@ -1,4 +1,4 @@
-#Docker file for the Node and uploading on docker hub
+#Docker file for the Node and uploading on docker hub looks good
 FROM node
 FROM node AS builder
 WORKDIR /opt/front
