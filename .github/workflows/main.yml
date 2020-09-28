@@ -5,6 +5,8 @@ on:
       - master
       - devlop
       - feature
+      - release.*
+      - hotfix.*
 
 jobs:
   build:
@@ -20,4 +22,4 @@ jobs:
         WITH_V: true
         PRERELEASE_SUFFIX: dev
         TAG_CONTEXT: branch
-        RELEASE_BRANCHES: master,devlop,feature,release.*,hotfix.*
+        RELEASE_BRANCHES: devlop,feature,release.*,hotfix.*
