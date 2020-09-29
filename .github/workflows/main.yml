@@ -2,11 +2,8 @@ name: Bump versions
 on:
   push:
     branches:
-      - master
-      - devlop
-      - feature
-      - release.*
-      - hotfix.*
+      - prerelease
+      
 
 jobs:
   build:
@@ -22,4 +19,4 @@ jobs:
         WITH_V: true
         PRERELEASE_SUFFIX: dev
         TAG_CONTEXT: branch
-        RELEASE_BRANCHES: devlop,feature,release.*,hotfix.*
+        RELEASE_BRANCHES: develop,feature,release.*,hotfix.*
