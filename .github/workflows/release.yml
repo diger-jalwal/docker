@@ -6,7 +6,7 @@ on:
       - master
       - devlop
       - feature
-      - 
+      - prerelase
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,4 +21,4 @@ jobs:
         WITH_V: true
         PRERELEASE_SUFFIX: dev
         TAG_CONTEXT: branch
-        RELEASE_BRANCHES: master,devlop,feature,release.*,hotfix.*
+        RELEASE_BRANCHES: master,devlop,feature,prerelease.*,hotfix.*
